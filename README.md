@@ -6,15 +6,15 @@
 - Модальное окно (открытие по кнопке, таймеру, скроллу до конца страницы); 
 - Динамически создаваемые карточки товаров на основе данных от сервера; (json-server для имитации бэкенда)
 - Формы (Сбор данных, отправка на сервер);
-- Слайдер
-- Калькулятор (Валидация пользовательских данных с помощью регулярных выражений, localStorage для хранения)
+- Слайдер;
+- Калькулятор (Валидация пользовательских данных с помощью регулярных выражений, localStorage для хранения);
 
 ### [Онлайн демо](https://veronica-ivanova.github.io/project_Food/)
 
 ### Тестировать локально:
 - ```
-  git clone https://github.com/veronica-ivanova/Project_Food.git
-  cd Project_Food
+  git clone https://github.com/veronica-ivanova/project_Food.git
+  cd project_Food
   ```
 - npm install
 
