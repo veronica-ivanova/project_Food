@@ -25,7 +25,11 @@ import cards from './modules/cards';
 import calc from './modules/calc';
 import forms from './modules/forms';
 import slider from './modules/slider';
-import {openModal} from './modules/modal'
+import {openModal} from './modules/modal';
+// yourScript.js
+// import { tns } from "./node_modules/tiny-slider/src/tiny-slider";
+// import { tns } from 'tiny-slider';
+
 
 window.addEventListener('DOMContentLoaded', () => {
 
@@ -44,7 +48,14 @@ window.addEventListener('DOMContentLoaded', () => {
         totalCounter: '#total',
         currentCounter: '#current'
 
-    })
+    });
+    // tns({
+    //     container: '.my-slider',
+    //     items: 1,
+    //     slideBy: 'page',
+    //     autoplay: false,
+    //     nextButton: '.nextButton'
+    //   });
         
 
 })

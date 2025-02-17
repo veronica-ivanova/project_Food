@@ -59,16 +59,11 @@ function calc() {
                 elem.classList.add(activeClass);
             }
         });
-
     }
 
     initLocalSettings('#gender div', 'calculating__choose-item_active');
     initLocalSettings('.calculating__choose_big div', 'calculating__choose-item_active');
 
-
-    
-
-    
     function getStaticInformation(selector, activeClass) {
         const elements = document.querySelectorAll(selector);
 
@@ -91,10 +86,7 @@ function calc() {
     
                 calcTotal();
             })
-
-       });
-
-        
+       });    
     }
     getStaticInformation('#gender div', 'calculating__choose-item_active');
     getStaticInformation('.calculating__choose_big div', 'calculating__choose-item_active');
@@ -122,8 +114,7 @@ function calc() {
                     break;
             }
             calcTotal();
-        });
-                
+        });               
     }
     getDynamicInformation('#height');
     getDynamicInformation('#weight');
@@ -289,11 +280,6 @@ function forms(formSelector, modalTimerId) {
         bindPostData(item);
     });
 
-
-
-
-
-
     function bindPostData(form) {
         form.addEventListener('submit', (e) => {
             e.preventDefault();
@@ -309,8 +295,6 @@ function forms(formSelector, modalTimerId) {
 
             // const request = new XMLHttpRequest();
             // request.open('POST', 'server.php');
-
-
 
             // request.setRequestHeader('Content-type', 'multipart/form-data');
             // request.setRequestHeader('Content-type', 'application/json');
@@ -445,11 +429,8 @@ function modal(trigerSelector, modalSelector, modalTimerId) {
         }
     });
 
-    
-
-
     function showModalByScroll() {
-        if (window.pageYOffset + document.documentElement.clientHeight >= document.documentElement.scrollHeight) {
+        if (window.scrollY + document.documentElement.clientHeight >= document.documentElement.scrollHeight - 1) {
             openModal(modalSelector, modalTimerId);
             window.removeEventListener('scroll', showModalByScroll);
         }
@@ -579,7 +560,6 @@ function tabs(tabsSelector, tabsContentSelector, tabsParentSelector, activeClass
                 }
             });
         }
-
     })
 }
 
@@ -798,6 +778,10 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+// yourScript.js
+// import { tns } from "./node_modules/tiny-slider/src/tiny-slider";
+// import { tns } from 'tiny-slider';
+
 
 window.addEventListener('DOMContentLoaded', () => {
 
@@ -816,7 +800,14 @@ window.addEventListener('DOMContentLoaded', () => {
         totalCounter: '#total',
         currentCounter: '#current'
 
-    })
+    });
+    // tns({
+    //     container: '.my-slider',
+    //     items: 1,
+    //     slideBy: 'page',
+    //     autoplay: false,
+    //     nextButton: '.nextButton'
+    //   });
         
 
 })

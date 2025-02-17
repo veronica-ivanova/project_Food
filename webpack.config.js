@@ -9,9 +9,17 @@ module.exports = {
     filename: 'bundle.js',
     path: __dirname + '/js'
   },
+
   watch: true,
 
   devtool: "source-map",
 
-  module: {}
+  module: {},
+
+  resolve: {
+    alias: {
+      'tiny-slider': 'tiny-slider/src/tiny-slider'
+    }
+  }
+
 };
